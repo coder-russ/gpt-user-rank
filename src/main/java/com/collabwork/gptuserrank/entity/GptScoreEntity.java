@@ -2,6 +2,8 @@ package com.collabwork.gptuserrank.entity;
 
 import com.collabwork.gptuserrank.models.User;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 @Entity
 @Table(name="GPTSCORE")
 @Data
+@Builder
 public class GptScoreEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
